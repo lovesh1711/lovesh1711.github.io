@@ -49,6 +49,39 @@
       border-radius: 10px;
     }
 
+    #skills {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skill-item img {
+    width: 80px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.skill-item p {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
     #get-in-touch {
             text-align: center; /* Center text within the section */
             padding: 20px;     /* Optional padding */
@@ -115,8 +148,12 @@
 
   <body class="is-preload">
     <div class="navbar">
+      <a href="#banner">About</a>
+      <a href="#recent-news">Recent News</a>
       <a href="#work-experience">Work Experience</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+
       <a href="#get-in-touch">Get in Touch</a>
     </div>
 
@@ -140,8 +177,7 @@
 			  <li><a href="https://www.linkedin.com/in/lovesh-goyal-119033219/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
         <li><a href="mailto:loveshgoyal2002@gmail.com" class="icon fas fa-envelope"><span class="label">Email</span></a></li>
 
-              <!-- <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li> -->
-              <!-- <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li> -->
+              
               <li>
                 <a
                   href="https://www.instagram.com/lovesh_1711/"
@@ -149,8 +185,6 @@
                   ><span class="label">Instagram</span></a
                 >
               </li>
-              <!-- <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li> -->
-              <!-- <li><a href="https://x.com/lovesh_1711" class="icon brands fa-Github"><span class="label">Twitter</span></a></li> -->
             </ul>
           </header>
 
@@ -199,6 +233,44 @@
               </style>
             </span>
           </section>
+
+          <section id="recent-news">
+            <header class="major">
+                <h2 style="font-size: 2.5rem">Recent News</h2>
+            </header>
+            <ul>
+                <li>
+                    <strong>[July. 2024]</strong> Started direct PhD in Aerospace Engineering department, specializing in flight dynamics and control. 
+                </li>
+                <li>
+                  <strong>[June. 2024]</strong> Our paper A Two Stage Approach of Route Planning for
+                  UAVs in Logistic Distribution got accepted at ICFCR 2024-IEEE kerela section.
+              </li>
+                <li>
+                  <strong>[May. 2024]</strong> Submitted my bachelor thesis and completed bachelors in electrical and electronics engineering from NIT Nagpur. 
+              </li>
+              <li>
+                <strong>[Dec. 2023]</strong> Completed my intern work at Endure air system as flight control engineer. 
+            </li>
+            <li>
+              <strong>[Sept. 2023]</strong> Received Junior research fellowship from Artpark, IIsc Bangalore
+          </li>
+          <li>
+            <strong>[Feb. 2023]</strong> Awarded the DAAD Wise scholarship to pursue onsite research in Germany.
+        </li>
+          <li>
+            <strong>[July. 2023]</strong> Completed my intern work at Technical University of Munich under Prof. Sophie Armanini. 
+        </li>
+        <li>
+          <strong>[July. 2022]</strong> Completed my intern work at Vecros technologies as Robotics software engineer. 
+      </li>
+      <li>
+        <strong>[Nov. 2021]</strong> Became a member of IvLabs- a student-run robotics and AI community at NIT Nagpur.
+    </li>
+            </ul>
+        </section>
+        
+
 
           <!-- Section -->
           <section id="work-experience">
@@ -314,7 +386,7 @@
                 <a
                   href="https://github.com/lovesh1711/Multi-UAV-Path-Planning-for-Urban-Air-Mobility"
                   class="image"
-                  ><img src="images/uav3Dpaths-18adb971.png " alt=""
+                  ><img src="images/uav3Dpaths-18adb971.png " alt="" 
                 /></a>
                 <h3>Multi-UAV path planning for urban air mobility</h3>
                 <p>
@@ -337,7 +409,7 @@
                 <a
                   href="https://github.com/IvLabs/tethered-aerial-vehicle"
                   class="image"
-                  ><img src="images/tethered-71295316.png" alt="" style="width: auto; height: auto;" 
+                  ><img src="images/tethered-71295316.png" alt="" style="width: auto; height: auto;"
                 /></a>
                 <h3>Tethered Aerial Vehicle for Blind Navigation</h3>
                 <p>
@@ -359,7 +431,7 @@
                 <a
                   href="https://github.com/lovesh1711/Inverted-Pendulum"
                   class="image"
-                  ><img src="images/pendulum-28a63917.png" alt=""
+                  ><img src="images/pendulum-28a63917.png" alt="" 
                 /></a>
                 <h3>Inverted Pendulum</h3>
                 <p>
@@ -450,7 +522,7 @@
                 <a
                   href="https://github.com/lovesh1711/Trajectory-Estimation-using-EKF"
                   class="image"
-                  ><img src="images/EKF-72a6197d.png" alt=""
+                  ><img src="images/EKF-72a6197d.png" alt="" style="width: auto; height: auto;"
                 /></a>
                 <h3>Trajectory Estimation using EKF</h3>
                 <p>
@@ -469,6 +541,52 @@
               </article>
             </div>
           </section>
+
+          <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-item">
+                    <img src="images/python-08e79ad9.png" alt="Python">
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                  <img src="images/c__-6fcc3512.png" alt="C/C++">
+                  <p>C/C++</p>
+              </div>
+              <div class="skill-item">
+                <img src="images/arduino-11a58d89.jpg" alt="arduino">
+                <p>Arduino</p>
+            </div>
+            <div class="skill-item">
+              <img src="images/fusion-0c133143.png" alt="Fusion">
+              <p>Fusion</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/matlab-b5f13c2e.jpg" alt="matlab">
+            <p>Matlab</p>
+          </div>        
+          <div class="skill-item">
+            <img src="images/premier pro.png" alt="Premier pro">
+            <p>Premier Pro</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/solidworks.jpg" alt="solidworks">
+            <p>Solidworks</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/tex.png" alt="LaTeX">
+            <p>LaTeX</p>
+          </div>
+          <div class="skill-item">
+            <img src="images/missionplanner.jpg" alt="missionplanner">
+            <p>Mission Planner</p>
+          </div>
+                <!-- Add more skill items as needed -->
+            </div>
+        </section>
+        
+
+
 
 
           <section id="get-in-touch">
